@@ -6,6 +6,11 @@
             "email": "esteban.biret@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Rover\\": "src/"
+        }
+    },
     "require": {
     },
     "require-dev": {
