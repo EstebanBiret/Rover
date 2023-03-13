@@ -4,12 +4,10 @@ namespace Rover;
 use Obstacles;
 class MarsRover {
 
-    //private $initialPosition;
     private $x;
     private $y;
     private $direction;
     private $obstacles = array(); //tableau des obstacles
-    //private $obstacle = new Obstacles();
     //generer entre 1 et 9
 
     public function __construct(){
@@ -93,8 +91,7 @@ class MarsRover {
                         if(($obstacles[i].getY() == $this->y + 1) || ($obstacles[i].getY() == 0 && $this->y == 9)){
                             return "On ne peut plus avancer !
                             Position du Rover : " . $this->getPosition() . ", 
-                            Position de l'obstacle : X ->" . $obstacles[i].getX() . 
-                            ", Y -> " . $obstacles[i].getY(); 
+                            Position de l'obstacle : " . $obstacles[i].getObstacle(); 
                         }
                     }
 
@@ -112,8 +109,7 @@ class MarsRover {
                         if(($obstacles[i].getY() == $this->y - 1) || ($obstacles[i].getY() == 9 && $this->y == 0)){
                             return "On ne peut plus avancer !
                             Position du Rover : " . $this->getPosition() . ", 
-                            Position de l'obstacle : X ->" . $obstacles[i].getX() . 
-                            ", Y -> " . $obstacles[i].getY(); 
+                            Position de l'obstacle : " . $obstacles[i].getObstacle();
                         }
                     }
 
@@ -131,8 +127,7 @@ class MarsRover {
                         if(($obstacles[i].getX() == $this->x - 1) || ($obstacles[i].getX() == 9 && $this->y == 0)){
                             return "On ne peut plus avancer !
                             Position du Rover : " . $this->getPosition() . ", 
-                            Position de l'obstacle : X ->" . $obstacles[i].getX() . 
-                            ", Y -> " . $obstacles[i].getY(); 
+                            Position de l'obstacle : " . $obstacles[i].getObstacle(); 
                         }
                     }
 
@@ -150,8 +145,7 @@ class MarsRover {
                         if(($obstacles[i].getX() == $this->x + 1) || ($obstacles[i].getX() == 0 && $this->y == 9)){
                             return "On ne peut plus avancer !
                             Position du Rover : " . $this->getPosition() . ", 
-                            Position de l'obstacle : X ->" . $obstacles[i].getX() . 
-                            ", Y -> " . $obstacles[i].getY(); 
+                            Position de l'obstacle : " . $obstacles[i].getObstacle();
                         }
                     }
 

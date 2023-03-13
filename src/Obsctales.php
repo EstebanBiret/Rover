@@ -17,11 +17,4 @@ class Obstacles {
         return $res;
     }
 
-    public function getX(){
-        return $this->x;
-    }
-
-    public function getY(){
-        return $this->y;
-    }
 }
