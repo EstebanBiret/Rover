@@ -1,0 +1,14 @@
+{
+    "name": "etudiant/rover",
+    "authors": [
+        {
+            "name": "Esteban BIRET-TOSCANO",
+            "email": "esteban.biret@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    "phpunit/phpunit": "^8"
+    }
+}
